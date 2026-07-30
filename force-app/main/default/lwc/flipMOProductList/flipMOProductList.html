@@ -46,7 +46,7 @@
             <div if:true={products} class={containerClass}>
                 <template for:each={products} for:item="prod">
                     <div key={prod.Id} class={itemClass}>
-                        <c-shop-sphere-product-card product={prod} onproductclick={handleProductClick}></c-shop-sphere-product-card>
+                        <c-flip-m-o-product-card product={prod} onproductclick={handleProductClick}></c-flip-m-o-product-card>
                     </div>
                 </template>
             </div>

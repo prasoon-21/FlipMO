@@ -2,6 +2,10 @@
 <PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
     <hasActivationRequired>false</hasActivationRequired>
     <label>FlipMO Full Access</label>
+    <tabSettings>
+        <tab>FlipMO</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
     <fieldPermissions>
         <editable>true</editable>
         <field>Product__c.Image_URL__c</field>

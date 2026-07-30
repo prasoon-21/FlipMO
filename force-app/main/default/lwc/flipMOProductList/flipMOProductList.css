@@ -64,7 +64,7 @@
 .active-view { --sds-c-icon-color-foreground: var(--link-color); cursor: default; }
 .inactive-view { --sds-c-icon-color-foreground: #ccc; cursor: pointer; }
 .inactive-view:hover { --sds-c-icon-color-foreground: var(--link-color); }
-.list-view-container c-shop-sphere-product-card { display: block; max-width: 800px; }
+.list-view-container c-flip-m-o-product-card { display: block; max-width: 800px; }
 
 
 .skeleton-card { border: 1px solid #eee; border-radius: 8px; padding: 10px; height: 350px; background: #fff; }
