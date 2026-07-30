@@ -1,8 +1,8 @@
 import { LightningElement, api, wire, track } from 'lwc';
-import getOrderHistory from '@salesforce/apex/ShopSphereUserController.getOrderHistory';
+import getOrderHistory from '@salesforce/apex/FlipMOUserController.getOrderHistory';
 import { ShowToastEvent } from 'lightning/platformShowToastEvent';
 
-export default class ShopSphereProfile extends LightningElement {
+export default class FlipMOProfile extends LightningElement {
     @api customerId;
     @track orders = [];
     @track showTrackingModal = false;
@@ -96,7 +96,7 @@ export default class ShopSphereProfile extends LightningElement {
     
     downloadInvoice(event) {
         const orderId = event.target.dataset.id;
-        window.open(`/apex/ShopSphereInvoice?id=${orderId}`, '_blank');
+        window.open(`/apex/FlipMOInvoice?id=${orderId}`, '_blank');
     }
     
     handleReturn() {

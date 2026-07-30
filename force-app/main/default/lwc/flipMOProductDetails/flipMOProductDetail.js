@@ -1,11 +1,11 @@
 
 import { LightningElement, api, wire } from 'lwc';
-import getProductDetails from '@salesforce/apex/ShopSphereController.getProductDetails';
-import getTrendingProducts from '@salesforce/apex/ShopSphereController.getTrendingProducts';
-import addToCartApex from '@salesforce/apex/ShopSphereCartController.addToCart';
-import { showToast } from 'c/shopSphereUtils';
+import getProductDetails from '@salesforce/apex/FlipMOController.getProductDetails';
+import getTrendingProducts from '@salesforce/apex/FlipMOController.getTrendingProducts';
+import addToCartApex from '@salesforce/apex/FlipMOCartController.addToCart';
+import { showToast } from 'c/flipMOUtils';
 
-export default class ShopSphereProductDetail extends LightningElement {
+export default class FlipMOProductDetail extends LightningElement {
     @api productId;
     product;
     quantity = 1;

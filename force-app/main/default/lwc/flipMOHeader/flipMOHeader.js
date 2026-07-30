@@ -1,9 +1,9 @@
 import { LightningElement, api, wire, track } from 'lwc';
-import getCategories from '@salesforce/apex/ShopSphereController.getCategories';
-import getSearchSuggestions from '@salesforce/apex/ShopSphereController.getSearchSuggestions';
-import { showToast } from 'c/shopSphereUtils';
+import getCategories from '@salesforce/apex/FlipMOController.getCategories';
+import getSearchSuggestions from '@salesforce/apex/FlipMOController.getSearchSuggestions';
+import { showToast } from 'c/flipMOUtils';
 
-export default class ShopSphereHeader extends LightningElement {
+export default class FlipMOHeader extends LightningElement {
     @api cartCount = 0;
     @api customerName = "";
     get displayName() { return this.customerName || "sign in"; }

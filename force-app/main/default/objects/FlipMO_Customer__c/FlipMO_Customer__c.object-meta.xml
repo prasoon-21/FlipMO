@@ -7,11 +7,11 @@
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <label>ShopSphere Customer</label>
+    <label>FlipMO Customer</label>
     <nameField>
         <label>Customer Name</label>
         <type>Text</type>
     </nameField>
-    <pluralLabel>ShopSphere Customers</pluralLabel>
+    <pluralLabel>FlipMO Customers</pluralLabel>
     <sharingModel>ReadWrite</sharingModel>
 </CustomObject>

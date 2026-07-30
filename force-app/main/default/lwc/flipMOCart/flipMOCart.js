@@ -1,8 +1,8 @@
 import { LightningElement, track, api } from 'lwc';
-import getCart from '@salesforce/apex/ShopSphereCartController.getCart';
-import updateCartItem from '@salesforce/apex/ShopSphereCartController.updateCartItem';
+import getCart from '@salesforce/apex/FlipMOCartController.getCart';
+import updateCartItem from '@salesforce/apex/FlipMOCartController.updateCartItem';
 
-export default class ShopSphereCart extends LightningElement {
+export default class FlipMOCart extends LightningElement {
     @track cart;
     @api customerId;
     @track cartItems = [];

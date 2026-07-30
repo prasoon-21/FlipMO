@@ -15,7 +15,7 @@ List<Product__c> products = new List<Product__c>();
 products.add(new Product__c(
     Name = 'Echo Dot (4th Gen) | Smart speaker with Alexa',
     Description__c = 'Meet the all-new Echo Dot - Our most popular smart speaker with Alexa. The sleek, compact design delivers crisp vocals and balanced bass for full sound.',
-    Price__c = 49.99, Stock__c = 100, Rating__c = 4.8, Brand__c = 'ShopSphere Devices', Prime_Eligible__c = true, Category__c = categories[0].Id, Delivery_Time__c = 1,
+    Price__c = 49.99, Stock__c = 100, Rating__c = 4.8, Brand__c = 'FlipMO Devices', Prime_Eligible__c = true, Category__c = categories[0].Id, Delivery_Time__c = 1,
     Image_URL__c = 'https://images.unsplash.com/photo-1543512214-318c7553f230?auto=format&fit=crop&w=500&q=60'
 ));
 products.add(new Product__c(
@@ -51,7 +51,7 @@ products.add(new Product__c(
 products.add(new Product__c(
     Name = 'Men\'s Classic Fit Long-Sleeve Oxford Shirt',
     Description__c = 'A versatile classic that is easy to care for and look great in.',
-    Price__c = 25.00, Stock__c = 150, Rating__c = 4.3, Brand__c = 'ShopSphere Essentials', Prime_Eligible__c = true, Category__c = categories[3].Id, Delivery_Time__c = 2,
+    Price__c = 25.00, Stock__c = 150, Rating__c = 4.3, Brand__c = 'FlipMO Essentials', Prime_Eligible__c = true, Category__c = categories[3].Id, Delivery_Time__c = 2,
     Image_URL__c = 'https://images.unsplash.com/photo-1596755094514-f87e32f08286?auto=format&fit=crop&w=500&q=60'
 ));
 

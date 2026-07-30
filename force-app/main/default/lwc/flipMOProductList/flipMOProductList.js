@@ -1,9 +1,9 @@
 
 import { LightningElement, api, wire, track } from 'lwc';
-import getProducts from '@salesforce/apex/ShopSphereController.getProducts';
-import { showToast } from 'c/shopSphereUtils';
+import getProducts from '@salesforce/apex/FlipMOController.getProducts';
+import { showToast } from 'c/flipMOUtils';
 
-export default class ShopSphereProductList extends LightningElement {
+export default class FlipMOProductList extends LightningElement {
     get skeletonList() { return [1,2,3,4,5,6]; }
     @api categoryId;
     @api searchTerm;

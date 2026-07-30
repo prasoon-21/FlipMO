@@ -1,9 +1,9 @@
 import { LightningElement, track, api } from 'lwc';
-import getCart from '@salesforce/apex/ShopSphereCartController.getCart';
-import checkout from '@salesforce/apex/ShopSphereCartController.checkout';
+import getCart from '@salesforce/apex/FlipMOCartController.getCart';
+import checkout from '@salesforce/apex/FlipMOCartController.checkout';
 import { ShowToastEvent } from 'lightning/platformShowToastEvent';
 
-export default class ShopSphereCheckout extends LightningElement {
+export default class FlipMOCheckout extends LightningElement {
     @track cart;
     @api customerId;
     @track cartItems = [];

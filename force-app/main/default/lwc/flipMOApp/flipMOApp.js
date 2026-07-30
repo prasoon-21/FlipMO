@@ -1,9 +1,9 @@
 import { LightningElement, track, wire } from 'lwc';
-import getCart from '@salesforce/apex/ShopSphereCartController.getCart';
-import addToCart from '@salesforce/apex/ShopSphereCartController.addToCart';
+import getCart from '@salesforce/apex/FlipMOCartController.getCart';
+import addToCart from '@salesforce/apex/FlipMOCartController.addToCart';
 import { ShowToastEvent } from 'lightning/platformShowToastEvent';
 
-export default class ShopSphereApp extends LightningElement {
+export default class FlipMOApp extends LightningElement {
     @track currentView = 'login';
     customerId = null;
     customerName = '';

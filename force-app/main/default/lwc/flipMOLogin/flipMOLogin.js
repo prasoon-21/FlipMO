@@ -1,18 +1,18 @@
 
 import { LightningElement, track } from 'lwc';
-import login from '@salesforce/apex/ShopSphereAuthController.login';
-import register from '@salesforce/apex/ShopSphereAuthController.register';
-import { showToast } from 'c/shopSphereUtils';
+import login from '@salesforce/apex/FlipMOAuthController.login';
+import register from '@salesforce/apex/FlipMOAuthController.register';
+import { showToast } from 'c/flipMOUtils';
 
-export default class ShopSphereLogin extends LightningElement {
+export default class FlipMOLogin extends LightningElement {
     @track isRegister = false;
     name = '';
     email = '';
     password = '';
 
     get modeTitle() { return this.isRegister ? 'Create Account' : 'Sign in'; }
-    get toggleText() { return this.isRegister ? 'Already have an account?' : 'New to ShopSphere?'; }
-    get toggleBtnText() { return this.isRegister ? 'Sign in' : 'Create your ShopSphere account'; }
+    get toggleText() { return this.isRegister ? 'Already have an account?' : 'New to FlipMO?'; }
+    get toggleBtnText() { return this.isRegister ? 'Sign in' : 'Create your FlipMO account'; }
 
     handleName(e) { this.name = e.target.value; }
     handleEmail(e) { this.email = e.target.value; }

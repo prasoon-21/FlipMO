@@ -1,6 +1,6 @@
 
 import { LightningElement, api } from 'lwc';
-export default class ShopSphereProductCard extends LightningElement {
+export default class FlipMOProductCard extends LightningElement {
     @api product;
     
     get stars() {

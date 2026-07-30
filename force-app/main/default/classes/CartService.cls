@@ -14,7 +14,7 @@ public inherited sharing class CartService {
     public void addItemToCart(Id customerId, Id productId, Integer quantity) {
         Cart__c cart = getOrCreateActiveCart(customerId);
         Product__c prod = new ProductSelector().getProductById(productId);
-        if(prod == null) throw new ShopSphereException('Product not found');
+        if(prod == null) throw new FlipMOException('Product not found');
         
         List<Cart_Item__c> existingItems = cartSelector.getCartItem(cart.Id, productId);
         if (!existingItems.isEmpty()) {
@@ -35,7 +35,7 @@ public inherited sharing class CartService {
     
     public String checkoutCart(Id customerId, String deliveryAddress, String paymentMethod) {
         Cart__c cart = getOrCreateActiveCart(customerId);
-        if (cart.Cart_Items__r.isEmpty()) throw new ShopSphereException('Cart is empty');
+        if (cart.Cart_Items__r.isEmpty()) throw new FlipMOException('Cart is empty');
         
         Savepoint sp = Database.setSavepoint();
         try {
@@ -54,7 +54,7 @@ public inherited sharing class CartService {
             return newOrder.Id;
         } catch(Exception e) {
             Database.rollback(sp);
-            throw new ShopSphereException('Checkout failed: ' + e.getMessage());
+            throw new FlipMOException('Checkout failed: ' + e.getMessage());
         }
     }
 }

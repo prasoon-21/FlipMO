@@ -10,8 +10,8 @@
     <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
     <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
     <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
-    <label>ShopSphere</label>
+    <label>FlipMO</label>
     <navType>Standard</navType>
-    <tabs>ShopSphere</tabs>
+    <tabs>FlipMO</tabs>
     <uiType>Lightning</uiType>
 </CustomApplication>

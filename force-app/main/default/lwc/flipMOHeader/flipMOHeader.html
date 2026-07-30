@@ -2,7 +2,7 @@
     <header class="header">
         <div class="header-top slds-grid slds-grid_align-spread slds-grid_vertical-align-center">
             <div class="logo-container" onclick={goHome}>
-                <span class="logo-text">ShopSphere</span><span class="logo-domain">.com</span>
+                <span class="logo-text">FlipMO</span><span class="logo-domain">.com</span>
             </div>
             
             
@@ -22,7 +22,7 @@
                             <option key={cat.Id} value={cat.Id}>{cat.Name}</option>
                         </template>
                     </select>
-                    <input type="text" class="search-input" placeholder="Search ShopSphere (AI Powered)" value={searchTerm} onkeyup={handleSearchKeyUp} oninput={handleSearchInput} onblur={handleSearchBlur}/>
+                    <input type="text" class="search-input" placeholder="Search FlipMO (AI Powered)" value={searchTerm} onkeyup={handleSearchKeyUp} oninput={handleSearchInput} onblur={handleSearchBlur}/>
                     <button class="search-button" onclick={executeSearch}>
                         <lightning-icon icon-name="utility:search" size="x-small" variant="inverse"></lightning-icon>
                     </button>

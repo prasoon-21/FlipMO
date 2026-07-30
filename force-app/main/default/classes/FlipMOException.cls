@@ -1,1 +1,1 @@
-public class ShopSphereException extends Exception {}
+public class FlipMOException extends Exception {}

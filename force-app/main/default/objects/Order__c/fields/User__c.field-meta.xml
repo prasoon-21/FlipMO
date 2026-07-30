@@ -9,6 +9,6 @@
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
         <referenceTo>User</referenceTo>
-        <relationshipName>Orders_ShopSphere</relationshipName>
+        <relationshipName>Orders_FlipMO</relationshipName>
     
 </CustomField>

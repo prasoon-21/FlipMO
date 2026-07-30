@@ -1,9 +1,9 @@
 import { LightningElement, wire, track } from 'lwc';
-import getCategories from '@salesforce/apex/ShopSphereController.getCategories';
-import getTrendingProducts from '@salesforce/apex/ShopSphereController.getTrendingProducts';
-import getAIRecommendations from '@salesforce/apex/ShopSphereController.getAIRecommendations';
+import getCategories from '@salesforce/apex/FlipMOController.getCategories';
+import getTrendingProducts from '@salesforce/apex/FlipMOController.getTrendingProducts';
+import getAIRecommendations from '@salesforce/apex/FlipMOController.getAIRecommendations';
 
-export default class ShopSphereHome extends LightningElement {
+export default class FlipMOHome extends LightningElement {
     get skeletonList() { return [1,2,3,4,5]; }
     @track categories = [];
     @track trendingProducts = [];

@@ -1,4 +1,4 @@
-<apex:page controller="ShopSphereInvoiceController" renderAs="pdf" applyBodyTag="false">
+<apex:page controller="FlipMOInvoiceController" renderAs="pdf" applyBodyTag="false">
     <head>
         <style>
             body { font-family: 'Arial Unicode MS', sans-serif; font-size: 12px; }
@@ -16,7 +16,7 @@
     </head>
     <body>
         <div class="header">
-            <div class="logo">ShopSphere</div>
+            <div class="logo">FlipMO</div>
             <div class="title">Order Invoice / Summary</div>
         </div>
         
@@ -63,7 +63,7 @@
         </table>
         
         <div class="footer">
-            Thank you for shopping with ShopSphere! This is a computer generated invoice.
+            Thank you for shopping with FlipMO! This is a computer generated invoice.
         </div>
     </body>
 </apex:page>
