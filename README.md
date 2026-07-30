@@ -6,6 +6,9 @@ A multi-vertical booking system combining **E-commerce (Flipkart-style)**, **Tra
 
 ---
 
+<img width="1875" height="737" alt="Screenshot 2026-07-30 154706" src="https://github.com/user-attachments/assets/5d4f5115-286d-4f17-90db-f63f3763a44c" />
+<img width="1900" height="721" alt="Screenshot 2026-07-30 154723" src="https://github.com/user-attachments/assets/da68f41e-ae30-4797-9fb5-0363ee34a99c" />
+
 ## Project Objective
 
 To demonstrate how Salesforce's out-of-the-box capabilities can power a complex multi-service platform without heavy customization — leveraging **Standard Objects**, **SLDS styling**, and **declarative automation** wherever possible.
