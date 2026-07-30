@@ -1,0 +1,5 @@
+.sell-container { min-height: 80vh; background-color: #fff; }
+.hero-banner { background: var(--brand-primary); min-height: 400px; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+.amazon-btn { padding: 15px 40px; border-radius: 100px; font-size: 18px; font-weight: bold; border: none; background: var(--accent); cursor: pointer; color: #212121; transition: 0.2s; }
+.amazon-btn:hover { background: var(--accent-hover); transform: scale(1.05); }
+.benefits lightning-icon { --sds-c-icon-color-foreground: var(--link-color); }

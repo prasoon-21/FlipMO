@@ -4,5 +4,6 @@ public inherited sharing class AIRecommendationService {
         // In a real scenario, this would call Einstein or process Order History to find matching affinities.
         // We will simulate this by fetching recent trending items mixed with random stock.
         return new ProductSelector().getProductsByTags(new List<String>{'tech', 'modern'});
+        
     }
 }
