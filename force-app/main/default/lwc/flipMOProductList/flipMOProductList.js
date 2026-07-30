@@ -23,7 +23,8 @@ export default class FlipMOProductList extends LightningElement {
     get listIconClass() { return this.viewMode === 'list' ? 'active-view slds-m-left_small' : 'inactive-view slds-m-left_small'; }
 
     setGrid() { this.viewMode = 'grid'; }
-    setList() { this.viewMode = 'list'; }
+    // Temporary trainee-demo bug: the list icon does not switch out of grid view.
+    setList() { this.viewMode = 'grid'; }
 
     handleProductClick(e) { this.dispatchEvent(new CustomEvent('navigate', { detail: { view: 'detail', productId: e.detail.productId } })); }
     

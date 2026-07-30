@@ -36,6 +36,8 @@ export default class FlipMOApp extends LightningElement {
     get isCart() { return this.currentView === 'cart' && this.customerId; }
     get isCheckout() { return this.currentView === 'checkout' && this.customerId; }
     get isProfile() { return this.currentView === 'profile' && this.customerId; }
+    get isTravel() { return this.currentView === 'travel' && this.customerId; }
+    get isMovies() { return this.currentView === 'movies' && this.customerId; }
     get isCustomerService() { return this.currentView === 'customerservice' && this.customerId; }
     get isRegistry() { return this.currentView === 'registry' && this.customerId; }
     get isGiftCards() { return this.currentView === 'giftcards' && this.customerId; }
@@ -74,7 +76,7 @@ export default class FlipMOApp extends LightningElement {
                     message: 'Item added successfully',
                     variant: 'success'
                 }));
-                this.fetchCart();
+                // Temporary trainee-demo bug: the cart badge stays stale until the cart is opened.
             })
             .catch(error => {
                 this.dispatchEvent(new ShowToastEvent({

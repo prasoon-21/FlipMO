@@ -1,0 +1,28 @@
+<template>
+    <lightning-card title="FlipMO Movies" icon-name="utility:video">
+        <div class="slds-p-around_medium">
+            <p class="slds-text-body_regular slds-m-bottom_medium">Choose a cinema hall, movie, show time, and seats.</p>
+            <lightning-layout multiple-rows>
+                <lightning-layout-item size="12" medium-device-size="4" padding="around-small">
+                    <lightning-combobox label="Cinema hall" value={selectedCinema} options={cinemaOptions} onchange={handleCinemaChange} required></lightning-combobox>
+                </lightning-layout-item>
+                <lightning-layout-item size="12" medium-device-size="4" padding="around-small">
+                    <lightning-combobox label="Movie" value={selectedMovie} options={movieOptions} onchange={handleMovieChange} required></lightning-combobox>
+                </lightning-layout-item>
+                <lightning-layout-item size="12" medium-device-size="4" padding="around-small">
+                    <lightning-combobox label="Show time" value={selectedShowTime} options={showTimeOptions} onchange={handleShowTimeChange} required></lightning-combobox>
+                </lightning-layout-item>
+            </lightning-layout>
+            <h2 class="slds-text-heading_small slds-m-top_medium">Select seats</h2>
+            <div class="slds-grid slds-wrap slds-gutters_small slds-m-vertical_small">
+                <template for:each={seats} for:item="seat">
+                    <div key={seat.label} class="slds-col slds-size_1-of-4 slds-medium-size_1-of-8 slds-p-around_xx-small">
+                        <lightning-button label={seat.label} title={seat.label} variant={seat.variant} data-seat={seat.label} onclick={handleSeatSelection}></lightning-button>
+                    </div>
+                </template>
+            </div>
+            <p class="slds-text-body_small slds-m-bottom_small">{selectedSeatsLabel}</p>
+            <lightning-button label="Confirm movie booking" variant="brand" onclick={bookMovie}></lightning-button>
+        </div>
+    </lightning-card>
+</template>

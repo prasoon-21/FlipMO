@@ -94,9 +94,7 @@
         <editable>true</editable>
         <field>Order_Item__c.Total_Price__c</field>
         <readable>true</readable>
-    </fieldPermissions>
-    
-    <objectPermissions>
+    </fieldPermissions>    <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>true</allowDelete>
         <allowEdit>true</allowEdit>
@@ -104,8 +102,7 @@
         <modifyAllRecords>true</modifyAllRecords>
         <object>Product__c</object>
         <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
+    </objectPermissions>    <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>true</allowDelete>
         <allowEdit>true</allowEdit>
@@ -113,8 +110,7 @@
         <modifyAllRecords>true</modifyAllRecords>
         <object>FlipMO_Customer__c</object>
         <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
+    </objectPermissions>    <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>true</allowDelete>
         <allowEdit>true</allowEdit>
@@ -122,8 +118,7 @@
         <modifyAllRecords>true</modifyAllRecords>
         <object>Cart__c</object>
         <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
+    </objectPermissions>    <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>true</allowDelete>
         <allowEdit>true</allowEdit>
@@ -131,8 +126,7 @@
         <modifyAllRecords>true</modifyAllRecords>
         <object>Cart_Item__c</object>
         <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
+    </objectPermissions>    <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>true</allowDelete>
         <allowEdit>true</allowEdit>
@@ -140,8 +134,7 @@
         <modifyAllRecords>true</modifyAllRecords>
         <object>Order__c</object>
         <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
+    </objectPermissions>    <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>true</allowDelete>
         <allowEdit>true</allowEdit>
@@ -149,5 +142,4 @@
         <modifyAllRecords>true</modifyAllRecords>
         <object>Order_Item__c</object>
         <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-</PermissionSet>
+    </objectPermissions></PermissionSet>

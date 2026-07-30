@@ -1,12 +1,14 @@
 <template>
     <header class="header">
         <div class="header-top slds-grid slds-grid_align-spread slds-grid_vertical-align-center">
-            <div class="logo-container" onclick={goHome}>
-                <span class="logo-text">FlipMO</span><span class="logo-domain">.com</span>
+            <div class="logo-container">
+                <lightning-button-menu label="FlipMO.com" alternative-text="Switch FlipMO service" variant="bare-inverse" onselect={handleAppSwitch}>
+                    <lightning-menu-item value="home" label="Shopping"></lightning-menu-item>
+                    <lightning-menu-item value="travel" label="Travel"></lightning-menu-item>
+                    <lightning-menu-item value="movies" label="Movies"></lightning-menu-item>
+                </lightning-button-menu>
             </div>
-            
-            
-            <div class="nav-item location-item" onclick={handleNotImplemented} data-name="Location">
+<div class="nav-item location-item" onclick={handleNotImplemented} data-name="Location">
                 <lightning-icon icon-name="utility:checkin" size="small" variant="inverse"></lightning-icon>
                 <div class="loc-text">
                     <div class="nav-line-1">Delivering to Mumbai 400001</div>

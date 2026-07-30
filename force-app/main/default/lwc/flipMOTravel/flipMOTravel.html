@@ -1,0 +1,41 @@
+<template>
+    <lightning-card title="FlipMO Travel" icon-name="utility:world">
+        <div class="slds-p-around_medium">
+            <p class="slds-text-body_regular slds-m-bottom_medium">Book a hotel, bus, or flight with demo availability stored in Salesforce.</p>
+            <lightning-layout multiple-rows class="slds-m-bottom_medium">
+                <lightning-layout-item size="12" medium-device-size="6" padding="around-small">
+                    <lightning-input type="date" label="Travel date" value={travelDate} onchange={handleDateChange} required></lightning-input>
+                </lightning-layout-item>
+                <lightning-layout-item size="12" medium-device-size="6" padding="around-small">
+                    <lightning-input type="number" label="Travellers" value={travellerCount} min="1" onchange={handleTravellerChange} required></lightning-input>
+                </lightning-layout-item>
+            </lightning-layout>
+            <lightning-tabset active-tab-value={category} onactive={handleTabChange}>
+                <lightning-tab label="Hotels" value="Hotel"></lightning-tab>
+                <lightning-tab label="Buses" value="Bus"></lightning-tab>
+                <lightning-tab label="Flights" value="Flight"></lightning-tab>
+            </lightning-tabset>
+            <template if:true={options}>
+                <template for:each={options} for:item="option">
+                    <article key={option.Id} class="slds-box slds-m-top_small">
+                        <lightning-layout multiple-rows vertical-align="center">
+                            <lightning-layout-item size="12" medium-device-size="8" padding="around-small">
+                                <h2 class="slds-text-heading_small">{option.Name}</h2>
+                                <p>{option.BillingCity}</p>
+                                <p class="slds-text-body_small">{option.Booking_Details__c}</p>
+                                <p class="slds-text-body_small">Available: {option.Available_Seats__c}</p>
+                            </lightning-layout-item>
+                            <lightning-layout-item size="12" medium-device-size="4" padding="around-small" class="slds-text-align_right">
+                                <lightning-formatted-number value={option.Booking_Price__c} format-style="currency" currency-code="INR"></lightning-formatted-number>
+                                <div class="slds-m-top_small"><lightning-button label="Book" variant="brand" data-id={option.Id} onclick={bookOption}></lightning-button></div>
+                            </lightning-layout-item>
+                        </lightning-layout>
+                    </article>
+                </template>
+            </template>
+            <template if:false={options}>
+                <p class="slds-p-around_medium">No options are available yet. Run the booking sample-data script after deployment.</p>
+            </template>
+        </div>
+    </lightning-card>
+</template>

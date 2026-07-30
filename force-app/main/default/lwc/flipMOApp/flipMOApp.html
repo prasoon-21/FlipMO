@@ -37,6 +37,12 @@
             <template if:true={isProfile}>
                 <c-flip-m-o-profile customer-id={customerId} onnavigate={handleNavigate}></c-flip-m-o-profile>
             </template>
+            <template if:true={isTravel}>
+                <c-flip-m-o-travel customer-id={customerId}></c-flip-m-o-travel>
+            </template>
+            <template if:true={isMovies}>
+                <c-flip-m-o-movies customer-id={customerId}></c-flip-m-o-movies>
+            </template>
         </main>
         
         <footer class="app-footer">

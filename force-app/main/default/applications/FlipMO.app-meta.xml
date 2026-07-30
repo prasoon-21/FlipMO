@@ -4,7 +4,7 @@
         <headerColor>#131921</headerColor>
         <shouldOverrideOrgTheme>true</shouldOverrideOrgTheme>
     </brand>
-    <description>Amazon-inspired modern ecommerce application</description>
+    <description>Flipkart-inspired modern ecommerce application with Travel and Movie Booking Features</description>
     <formFactors>Large</formFactors>
     <formFactors>Small</formFactors>
     <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>

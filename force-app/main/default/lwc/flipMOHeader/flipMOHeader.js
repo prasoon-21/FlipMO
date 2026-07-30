@@ -20,6 +20,7 @@ export default class FlipMOHeader extends LightningElement {
     }
 
     goHome() { this.dispatchEvent(new CustomEvent('navigate', { detail: { view: 'home' } })); }
+    handleAppSwitch(event) { this.dispatchEvent(new CustomEvent('navigate', { detail: { view: event.detail.value } })); }
     goCart() { this.dispatchEvent(new CustomEvent('navigate', { detail: { view: 'cart' } })); }
     goProfile() { this.dispatchEvent(new CustomEvent('navigate', { detail: { view: 'profile' } })); }
     goDeals() { this.dispatchEvent(new CustomEvent('navigate', { detail: { view: 'list' } })); }
